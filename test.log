@@ -1,0 +1,144 @@
+2024-12-21 19:53:54,263 - INFO - rendered the html template 
+2024-12-21 19:54:01,347 - INFO - removing the columns more than 50 percent data is missing  
+2024-12-21 19:54:01,355 - INFO - handling the missing data and outlliers  
+2024-12-21 19:54:01,366 - INFO - removed duplicates 
+2024-12-21 19:54:01,379 - INFO - Data cleaning Completed! 
+2024-12-21 19:54:01,456 - INFO - Data Analysis Completed! 
+2024-12-21 19:54:03,539 - INFO - Visualization generation completed. 
+2024-12-21 19:54:09,634 - INFO - removing the columns more than 50 percent data is missing  
+2024-12-21 19:54:09,638 - INFO - handling the missing data and outlliers  
+2024-12-21 19:54:09,645 - INFO - removed duplicates 
+2024-12-21 19:54:09,647 - INFO - Data cleaning Completed! 
+2024-12-21 19:54:09,714 - INFO - Data Analysis Completed! 
+2024-12-21 19:54:11,784 - INFO - Visualization generation completed. 
+2024-12-21 19:54:16,424 - INFO - C:\Users\athar\DataAnalyzer\analyzer\views.py changed, reloading. 
+2024-12-21 19:54:27,538 - INFO - rendered the html template 
+2024-12-21 19:54:40,158 - INFO - removing the columns more than 50 percent data is missing  
+2024-12-21 19:54:40,160 - INFO - handling the missing data and outlliers  
+2024-12-21 19:54:40,167 - INFO - removed duplicates 
+2024-12-21 19:54:40,170 - INFO - Data cleaning Completed! 
+2024-12-21 19:54:40,230 - INFO - Data Analysis Completed! 
+2024-12-21 19:55:27,282 - INFO - Visualization generation completed. 
+2024-12-21 20:05:08,312 - INFO - rendered the html template 
+2024-12-21 20:05:22,605 - INFO - removing the columns more than 50 percent data is missing  
+2024-12-21 20:05:22,610 - INFO - handling the missing data and outlliers  
+2024-12-21 20:05:22,620 - INFO - removed duplicates 
+2024-12-21 20:05:22,622 - INFO - Data cleaning Completed! 
+2024-12-21 20:05:22,699 - INFO - Data Analysis Completed! 
+2024-12-21 20:05:24,747 - INFO - Visualization generation completed. 
+2024-12-21 20:11:15,211 - INFO - removing the columns more than 50 percent data is missing  
+2024-12-21 20:11:15,220 - INFO - handling the missing data and outlliers  
+2024-12-21 20:11:15,285 - INFO - removed duplicates 
+2024-12-21 20:11:15,295 - INFO - Data cleaning Completed! 
+2024-12-21 20:11:15,946 - INFO - Data Analysis Completed! 
+2024-12-21 20:11:30,722 - INFO - Visualization generation completed. 
+2024-12-21 20:14:20,412 - INFO - C:\Users\athar\DataAnalyzer\analyzer\views.py changed, reloading. 
+2024-12-21 20:15:00,366 - INFO - C:\Users\athar\DataAnalyzer\analyzer\views.py changed, reloading. 
+2024-12-21 20:15:13,356 - INFO - C:\Users\athar\DataAnalyzer\analyzer\views.py changed, reloading. 
+2024-12-21 20:15:51,479 - INFO - C:\Users\athar\DataAnalyzer\analyzer\views.py changed, reloading. 
+2024-12-21 20:16:01,306 - INFO - C:\Users\athar\DataAnalyzer\analyzer\views.py changed, reloading. 
+2024-12-21 20:16:16,662 - INFO - C:\Users\athar\DataAnalyzer\analyzer\views.py changed, reloading. 
+2024-12-21 20:16:22,759 - INFO - C:\Users\athar\DataAnalyzer\analyzer\views.py changed, reloading. 
+2024-12-21 20:16:42,695 - INFO - C:\Users\athar\DataAnalyzer\analyzer\views.py changed, reloading. 
+2024-12-21 20:16:48,400 - INFO - C:\Users\athar\DataAnalyzer\analyzer\views.py changed, reloading. 
+2024-12-21 20:16:59,723 - INFO - rendered the html template 
+2024-12-21 20:17:06,852 - INFO - removing the columns more than 50 percent data is missing  
+2024-12-21 20:17:06,855 - INFO - handling the missing data and outlliers  
+2024-12-21 20:17:06,859 - INFO - removed duplicates 
+2024-12-21 20:17:06,862 - INFO - Data cleaning Completed! 
+2024-12-21 20:17:06,891 - INFO - Data Analysis Completed! 
+2024-12-21 20:17:09,569 - INFO - Visualization generation completed. 
+2024-12-21 20:40:33,229 - INFO - rendered the html template 
+2024-12-21 20:47:10,912 - INFO - rendered the html template 
+2024-12-21 20:47:24,200 - INFO - removing the columns more than 50 percent data is missing  
+2024-12-21 20:47:24,203 - INFO - handling the missing data and outlliers  
+2024-12-21 20:47:24,207 - INFO - removed duplicates 
+2024-12-21 20:47:24,209 - INFO - Data cleaning Completed! 
+2024-12-21 20:47:24,239 - INFO - Data Analysis Completed! 
+2024-12-21 20:47:26,905 - INFO - Visualization generation completed. 
+2024-12-21 20:59:43,383 - INFO - rendered the html template 
+2024-12-21 21:00:30,070 - INFO - rendered the html template 
+2024-12-21 21:00:42,389 - INFO - removing the columns more than 50 percent data is missing  
+2024-12-21 21:00:42,393 - INFO - handling the missing data and outlliers  
+2024-12-21 21:00:42,397 - INFO - removed duplicates 
+2024-12-21 21:00:42,398 - INFO - Data cleaning Completed! 
+2024-12-21 21:00:42,424 - INFO - Data Analysis Completed! 
+2024-12-21 21:00:45,158 - INFO - Visualization generation completed. 
+2024-12-21 21:02:01,107 - INFO - removing the columns more than 50 percent data is missing  
+2024-12-21 21:02:01,109 - INFO - handling the missing data and outlliers  
+2024-12-21 21:02:01,112 - INFO - removed duplicates 
+2024-12-21 21:02:01,114 - INFO - Data cleaning Completed! 
+2024-12-21 21:02:01,128 - INFO - Data Analysis Completed! 
+2024-12-21 21:02:02,672 - INFO - Visualization generation completed. 
+2024-12-21 21:02:53,544 - INFO - removing the columns more than 50 percent data is missing  
+2024-12-21 21:02:53,546 - INFO - handling the missing data and outlliers  
+2024-12-21 21:02:53,552 - INFO - removed duplicates 
+2024-12-21 21:02:53,554 - INFO - Data cleaning Completed! 
+2024-12-21 21:02:53,613 - INFO - Data Analysis Completed! 
+2024-12-21 21:03:45,188 - INFO - Visualization generation completed. 
+2024-12-21 21:04:21,386 - INFO - removing the columns more than 50 percent data is missing  
+2024-12-21 21:04:21,397 - INFO - handling the missing data and outlliers  
+2024-12-21 21:04:21,410 - INFO - removed duplicates 
+2024-12-21 21:04:21,412 - INFO - Data cleaning Completed! 
+2024-12-21 21:04:21,543 - INFO - Data Analysis Completed! 
+2024-12-21 21:04:22,122 - WARNING - Failed to generate histogram for race/ethnicity: [Errno 2] No such file or directory: 'C:\\Users\\athar\\DataAnalyzer\\media\\plots\\race/ethnicity_histogram.png' 
+2024-12-21 21:04:28,221 - INFO - removing the columns more than 50 percent data is missing  
+2024-12-21 21:04:28,241 - INFO - handling the missing data and outlliers  
+2024-12-21 21:04:28,272 - INFO - removed duplicates 
+2024-12-21 21:04:28,279 - INFO - Data cleaning Completed! 
+2024-12-21 21:04:28,478 - INFO - Data Analysis Completed! 
+2024-12-21 21:04:29,322 - WARNING - Failed to generate histogram for race/ethnicity: [Errno 2] No such file or directory: 'C:\\Users\\athar\\DataAnalyzer\\media\\plots\\race/ethnicity_histogram.png' 
+2024-12-21 21:04:29,529 - INFO - Visualization generation completed. 
+2024-12-21 21:04:35,901 - INFO - Visualization generation completed. 
+2024-12-21 21:42:47,612 - INFO - removing the columns more than 50 percent data is missing  
+2024-12-21 21:42:47,615 - INFO - handling the missing data and outlliers  
+2024-12-21 21:42:47,621 - INFO - removed duplicates 
+2024-12-21 21:42:47,623 - INFO - Data cleaning Completed! 
+2024-12-21 21:42:47,662 - INFO - Data Analysis Completed! 
+2024-12-21 21:43:16,170 - INFO - Visualization generation completed. 
+2024-12-21 21:43:52,334 - INFO - removing the columns more than 50 percent data is missing  
+2024-12-21 21:43:52,336 - INFO - handling the missing data and outlliers  
+2024-12-21 21:43:52,341 - INFO - removed duplicates 
+2024-12-21 21:43:52,342 - INFO - Data cleaning Completed! 
+2024-12-21 21:43:52,390 - INFO - Data Analysis Completed! 
+2024-12-21 21:43:53,710 - INFO - Visualization generation completed. 
+2024-12-21 21:44:06,269 - INFO - removing the columns more than 50 percent data is missing  
+2024-12-21 21:44:06,271 - INFO - handling the missing data and outlliers  
+2024-12-21 21:44:06,274 - INFO - removed duplicates 
+2024-12-21 21:44:06,275 - INFO - Data cleaning Completed! 
+2024-12-21 21:44:06,297 - INFO - Data Analysis Completed! 
+2024-12-21 21:44:08,128 - INFO - Visualization generation completed. 
+2024-12-21 21:44:43,351 - INFO - removing the columns more than 50 percent data is missing  
+2024-12-21 21:44:43,356 - INFO - handling the missing data and outlliers  
+2024-12-21 21:44:43,388 - INFO - removed duplicates 
+2024-12-21 21:44:43,393 - INFO - Data cleaning Completed! 
+2024-12-21 21:44:43,838 - INFO - Data Analysis Completed! 
+2024-12-21 21:44:50,181 - INFO - Visualization generation completed. 
+2024-12-21 21:53:57,088 - INFO - rendered the html template 
+2024-12-21 21:54:14,378 - INFO - removing the columns more than 50 percent data is missing  
+2024-12-21 21:54:14,381 - INFO - handling the missing data and outlliers  
+2024-12-21 21:54:14,390 - INFO - removed duplicates 
+2024-12-21 21:54:14,392 - INFO - Data cleaning Completed! 
+2024-12-21 21:54:14,465 - INFO - Data Analysis Completed! 
+2024-12-21 21:54:16,581 - INFO - Visualization generation completed. 
+2024-12-21 22:01:45,438 - INFO - rendered the html template 
+2024-12-21 22:01:53,902 - INFO - removing the columns more than 50 percent data is missing  
+2024-12-21 22:01:53,906 - INFO - handling the missing data and outlliers  
+2024-12-21 22:01:53,916 - INFO - removed duplicates 
+2024-12-21 22:01:53,920 - INFO - Data cleaning Completed! 
+2024-12-21 22:01:54,011 - INFO - Data Analysis Completed! 
+2024-12-21 22:01:56,027 - INFO - Visualization generation completed. 
+2024-12-21 22:53:52,114 - INFO - rendered the html template 
+2024-12-21 22:53:58,174 - INFO - removing the columns more than 50 percent data is missing  
+2024-12-21 22:53:58,179 - INFO - handling the missing data and outlliers  
+2024-12-21 22:53:58,189 - INFO - removed duplicates 
+2024-12-21 22:53:58,192 - INFO - Data cleaning Completed! 
+2024-12-21 22:53:58,265 - INFO - Data Analysis Completed! 
+2024-12-21 22:54:00,416 - INFO - Visualization generation completed. 
+2024-12-22 00:14:24,680 - INFO - rendered the html template 
+2024-12-22 00:14:31,323 - INFO - removing the columns more than 50 percent data is missing  
+2024-12-22 00:14:31,325 - INFO - handling the missing data and outlliers  
+2024-12-22 00:14:31,331 - INFO - removed duplicates 
+2024-12-22 00:14:31,332 - INFO - Data cleaning Completed! 
+2024-12-22 00:14:31,369 - INFO - Data Analysis Completed! 
+2024-12-22 00:14:32,617 - INFO - Visualization generation completed. 
