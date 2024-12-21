@@ -142,3 +142,22 @@
 2024-12-22 00:14:31,332 - INFO - Data cleaning Completed! 
 2024-12-22 00:14:31,369 - INFO - Data Analysis Completed! 
 2024-12-22 00:14:32,617 - INFO - Visualization generation completed. 
+2024-12-22 03:15:51,856 - INFO - rendered the html template 
+2024-12-22 03:15:58,559 - INFO - removing the columns more than 50 percent data is missing  
+2024-12-22 03:15:58,564 - INFO - handling the missing data and outlliers  
+2024-12-22 03:15:58,575 - INFO - removed duplicates 
+2024-12-22 03:15:58,578 - INFO - Data cleaning Completed! 
+2024-12-22 03:15:58,647 - INFO - Data Analysis Completed! 
+2024-12-22 03:16:00,627 - INFO - Visualization generation completed. 
+2024-12-22 03:16:00,657 - WARNING - Not Found: /media/plots/runs_histogram.png 
+2024-12-22 03:16:00,659 - WARNING - Not Found: /media/plots/batter_histogram.png 
+2024-12-22 03:16:00,663 - WARNING - Not Found: /media/plots/avg_histogram.png 
+2024-12-22 03:16:00,780 - WARNING - Not Found: /media/plots/strike_rate_histogram.png 
+2024-12-22 03:16:06,105 - INFO - rendered the html template 
+2024-12-22 03:17:34,511 - INFO - rendered the html template 
+2024-12-22 03:17:39,958 - INFO - removing the columns more than 50 percent data is missing  
+2024-12-22 03:17:39,964 - INFO - handling the missing data and outlliers  
+2024-12-22 03:17:39,975 - INFO - removed duplicates 
+2024-12-22 03:17:39,978 - INFO - Data cleaning Completed! 
+2024-12-22 03:17:40,057 - INFO - Data Analysis Completed! 
+2024-12-22 03:17:42,061 - INFO - Visualization generation completed. 
