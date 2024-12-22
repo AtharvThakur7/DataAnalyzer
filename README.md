@@ -55,7 +55,7 @@ Plots are created using Matplotlib and Seaborn for high-quality visuals.
 
 #### Data Storage
 Stores the Users Input csv or excel files in Sqlite3 Database .
-![image alt]()
+![image alt](https://github.com/AtharvThakur7/DataAnalyzer/blob/6deea771b377ebe4732d8ca0153c44b062025107/Screenshot%202024-12-22%20102400.png)
 
 
 
