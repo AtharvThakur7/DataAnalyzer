@@ -75,6 +75,18 @@ The project bridges the gap between raw data and actionable insights, making it 
 
 ![image alt](https://github.com/AtharvThakur7/DataAnalyzer/blob/dc7c2b5424163175824bf7381cc85bcd13ce0706/Screenshot%202024-12-22%20102308.png)
 
+## Tech Stack
+
+**Backend:** Django,Python
+
+**Data Analysis:** Pandas
+
+**Data Visualization:** Matplotlib, Seaborn
+
+**Database:** SQLite3
+
+**Frontend:** Django Templates (HTML, CSS)
+
 
 
 
