@@ -55,6 +55,25 @@ Plots are created using Matplotlib and Seaborn for high-quality visuals.
 ![image alt](https://github.com/AtharvThakur7/DataAnalyzer/blob/b16b57951bd887533d44037a7f2f11a2be55aec2/Screenshot%202024-12-22%20093148.png)
 
 
+## Brief Explanation With Project Flow Structure
+
+The Data Analyzer is a web-based application designed to streamline the analysis and visualization of data stored in CSV and Excel files. Built using Django as the backend framework, the application offers a seamless user experience for uploading data files, performing quick exploratory data analysis (EDA), and generating insightful visualizations.
+
+With just a few clicks, users can:
+
+- Upload CSV or Excel files via a user-friendly interface.
+- View essential statistical summaries, such as mean, median, and standard deviation.
+- Identify missing values in the dataset.
+- Generate high-quality visualizations like histograms, powered by Matplotlib and Seaborn.
+
+The project bridges the gap between raw data and actionable insights, making it an essential tool for data enthusiasts, analysts, and developers who need rapid insights from their datasets.
+
+
+![image alt](https://github.com/AtharvThakur7/DataAnalyzer/blob/b16b57951bd887533d44037a7f2f11a2be55aec2/Screenshot%202024-12-22%20093148.png)
+
+
+
+
 
 
 
