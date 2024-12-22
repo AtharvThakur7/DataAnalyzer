@@ -33,11 +33,11 @@ Access the Application
 
 ## Features
 
-- File Upload
+### File Upload
 Upload CSV files directly via a web form.
 Files are temporarily stored for analysis.
 
-- Data Analysis
+### Data Analysis
 View the first few rows of your dataset.
 Generate key summary statistics, including:
 Mean
@@ -47,12 +47,12 @@ Automatically identify and handle missing values.
 
 ![image alt](https://github.com/AtharvThakur7/DataAnalyzer/blob/e4df6b1e59dcd87bb284c5be26e3abe158ec0e36/Screenshot%202024-12-22%20093119.png)
 
-- Data Visualization
+### Data Visualization
 Generate beautiful and informative plots, such as histograms.
 Plots are created using Matplotlib and Seaborn for high-quality visuals.
 
 
-![image alt](https://github.com/AtharvThakur7/DataAnalyzer/blob/e4df6b1e59dcd87bb284c5be26e3abe158ec0e36/Screenshot%202024-12-22%20093119.png)
+![image alt](https://github.com/AtharvThakur7/DataAnalyzer/blob/b16b57951bd887533d44037a7f2f11a2be55aec2/Screenshot%202024-12-22%20093148.png)
 
 
 
