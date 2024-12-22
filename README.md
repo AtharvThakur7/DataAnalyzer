@@ -48,7 +48,7 @@ Automatically identify and handle missing values.
 ![image alt](https://github.com/AtharvThakur7/DataAnalyzer/blob/e4df6b1e59dcd87bb284c5be26e3abe158ec0e36/Screenshot%202024-12-22%20093119.png)
 
 ### Data Visualization
-Generate beautiful and informative plots, such as histograms.
+Generate and Download beautiful and informative plots, such as histograms.
 Plots are created using Matplotlib and Seaborn for high-quality visuals.
 
 
