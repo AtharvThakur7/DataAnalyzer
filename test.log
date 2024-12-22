@@ -230,3 +230,4 @@ django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000
 2024-12-22 22:20:04,296 - INFO - Data cleaning Completed! 
 2024-12-22 22:20:04,331 - INFO - Data Analysis Completed! 
 2024-12-22 22:20:07,009 - INFO - Visualization generation completed. 
+2024-12-22 22:43:29,378 - INFO - rendered the html template 
