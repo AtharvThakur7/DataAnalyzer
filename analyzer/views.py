@@ -6,20 +6,23 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import os
 import matplotlib
+from django.conf import settings
 matplotlib.use('Agg')
 import logging as log 
 
+
+#configure the log file to keep track 
 log.basicConfig(filename='test.log' , level=log.INFO , format='%(asctime)s - %(levelname)s - %(message)s ')
 
-from django.conf import settings
 
-def home(request):
+
+def home(request):   # the home route to main application 
     try :
-            if(request.method == 'POST'):
+            if(request.method == 'POST'):         # use the post method 
                 file = request.FILES.get('file')   # Get the frontend data to backend
-                new_file = file
+                new_file = file                    # save the file for backup 
 
-                if file:
+                if file:         # checking the file extensions , transforming to dataframe and perform preprocessing
                     file_extension = file.name.split('.')[-1].lower()
                     if file_extension in ['csv', 'xlsx', 'xls']:  # Validating the data
                         try : 
@@ -48,7 +51,7 @@ def home(request):
                                 'message': 'File uploaded and analyzed!',
                                 'analysis': analysis,
                                 'visualizations': visualizations,
-                                'MEDIA_URL': settings.MEDIA_URL,         # 
+                                'MEDIA_URL': settings.MEDIA_URL,         # serving files  
                                 # 'MEDIA_URL': settings.MEDIA_URL,
 
                             })
@@ -64,6 +67,10 @@ def home(request):
     
     except Exception as e :
         log.error(f"error occured in home during routing",{e})
+
+
+
+
 def clean_data(data):  # Clean the data for analysis
     try : 
             threshold = len(data) * 0.5
@@ -71,12 +78,13 @@ def clean_data(data):  # Clean the data for analysis
             data = data.dropna(thresh=threshold, axis=1)  # Drop columns with more than 50% missing values
 
             # Step 2: Convert columns that should be numeric (ignoring errors) and turn non-numeric into NaN
+            #TODO:FUTURE SOLUTION - NEEDED for handling non numeric col properly
             for col in data.select_dtypes(include=['object']).columns:
                 # Try to convert strings in numeric columns into numbers; non-numeric will be turned to NaN
                 data[col] = pd.to_numeric(data[col], errors='coerce')
 
-            #TODO:FUTURE SOLUTION - NEEDED for handling non numeric col properly  
-            #   
+              
+             
             log.info("handling the missing data and outlliers ")
             for col in data.select_dtypes(include=['number']).columns:
                 missing_count = data[col].isnull().sum()
@@ -111,14 +119,15 @@ def clean_data(data):  # Clean the data for analysis
     except Exception as e :
         log.error(f"some error occured during cleaning , {e}")
 
+
 def perform_data_analysis(data):  # Perform analysis on the cleaned data
     try : 
 
         analysis = {}
         analysis['head'] = data.head(5).to_html()  # First few rowss
 
-        descriptive = data.describe().T
-        summarise = pd.DataFrame({
+        descriptive = data.describe().T        # descriptive statistics summary
+        summarise = pd.DataFrame({                 # get the feature overview
             'Countd': data.shape[0],
             'Null': data.isnull().sum(),
             'Null%': data.isnull().mean() * 100,
@@ -136,7 +145,8 @@ def perform_data_analysis(data):  # Perform analysis on the cleaned data
 
 
 def generate_visualizations(data):
-   
+    # perform visulization process on the data 
+    
 
     plots = {}
     try:
@@ -146,7 +156,7 @@ def generate_visualizations(data):
         for col in data.select_dtypes(include=['float64', 'int64']):
             try:
                 fig, ax = plt.subplots(figsize=(20, 10))
-                sns.histplot(data[col], kde=True, ax=ax, color='skyblue')
+                sns.histplot(data[col], kde=True, ax=ax, color='skyblue')   # plot the histogram 
                 ax.set_title(f"Histogram of {col}", fontsize=18)
                 ax.set_xlabel(f"{col} Values", fontsize=16)
                 ax.set_ylabel("Frequency", fontsize=16)
@@ -164,7 +174,7 @@ def generate_visualizations(data):
         for _, (col1, col2, value) in highly_corr.iterrows():
             try:
                 fig, ax = plt.subplots(figsize=(20, 10))
-                sns.scatterplot(x=data[col1], y=data[col2], ax=ax, color='green')
+                sns.scatterplot(x=data[col1], y=data[col2], ax=ax, color='green')    # plot the scatter plot for higly correlated variables
                 ax.set_title(f"Scatter plot: {col1} vs {col2}", fontsize=18)
                 ax.set_xlabel(f"{col1} Values", fontsize=16)
                 ax.set_ylabel(f"{col2} Values", fontsize=16)
