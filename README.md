@@ -14,7 +14,7 @@ In today’s data-driven world, making sense of raw data is a crucial skill. Thi
 Clone the Repository
 
 ```bash
-  https://github.com/AtharvThakur7/DataAnalyzer.git
+  git clone https://github.com/AtharvThakur7/DataAnalyzer.git
   cd DataAnalyzer
 ```
 Install Dependencies
@@ -51,8 +51,14 @@ Automatically identify and handle missing values.
 Generate and Download beautiful and informative plots, such as histograms.
 Plots are created using Matplotlib and Seaborn for high-quality visuals.
 
-
 ![image alt](https://github.com/AtharvThakur7/DataAnalyzer/blob/b16b57951bd887533d44037a7f2f11a2be55aec2/Screenshot%202024-12-22%20093148.png)
+
+#### Data Storage
+Stores the Users Input csv or excel files in Sqlite3 Database .
+
+
+![image alt](https://github.com/AtharvThakur7/DataAnalyzer/blob/6deea771b377ebe4732d8ca0153c44b062025107/Screenshot%202024-12-22%20102400.png)
+
 
 
 ## Brief Explanation With Project Flow Structure
@@ -69,7 +75,36 @@ With just a few clicks, users can:
 The project bridges the gap between raw data and actionable insights, making it an essential tool for data enthusiasts, analysts, and developers who need rapid insights from their datasets.
 
 
-![image alt](https://github.com/AtharvThakur7/DataAnalyzer/blob/b16b57951bd887533d44037a7f2f11a2be55aec2/Screenshot%202024-12-22%20093148.png)
+![image alt](https://github.com/AtharvThakur7/DataAnalyzer/blob/dc7c2b5424163175824bf7381cc85bcd13ce0706/Screenshot%202024-12-22%20102308.png)
+
+## Tech Stack
+
+**Backend:** Django,Python
+
+**Data Analysis:** Pandas
+
+**Data Visualization:** Matplotlib, Seaborn
+
+**Database:** SQLite3
+
+**Frontend:** Django Templates (HTML, CSS)
+
+
+
+## Future Enhancements
+
+While the current version of the Data Analyzer provides essential tools for data analysis and visualization, future versions aim to elevate the experience by:
+
+- Enabling end-to-end dynamic analysis and visualization, where users can filter, transform, and customize their data directly on the platform.
+
+- Creating a dashboard view to display multiple insights simultaneously for comprehensive analysis.
+
+
+## Conclusion
+
+The Data Analyzer is more than just a tool—it's your first step toward unlocking the full potential of your data. By simplifying the process of analysis and visualization, this project empowers users to extract meaningful insights from raw data efficiently and intuitively.
+
+We believe in continuous improvement and welcome suggestions, feedback, and contributions to make this tool even better.
 
 
 
