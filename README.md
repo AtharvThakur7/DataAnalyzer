@@ -1,6 +1,6 @@
 # Data Analyzer: CSV Processing and Visualization
 
-Welcome to the Django CSV Processor and Visualizer! This project provides a simple yet powerful interface for uploading, analyzing, and visualizing CSV data. Built with Python, Django, Pandas, Matplotlib, and Seaborn, this tool is perfect for exploring datasets interactively on the web.
+Welcome to the Data Analyzer! This project provides a simple yet powerful interface for uploading, analyzing, and visualizing CSV data. Built with Python, Django, Pandas, Matplotlib, and Seaborn, this tool is perfect for exploring datasets interactively on the web.
 
 ![image alt ](https://github.com/AtharvThakur7/DataAnalyzer/blob/662ffadf7dc7f0c4868b288c695b1720fb523c84/Screenshot%202024-12-22%20093037.png)
 
@@ -33,11 +33,11 @@ Access the Application
 
 ## Features
 
-### File Upload
+#### File Upload
 Upload CSV files directly via a web form.
 Files are temporarily stored for analysis.
 
-### Data Analysis
+#### Data Analysis
 View the first few rows of your dataset.
 Generate key summary statistics, including:
 Mean
@@ -47,7 +47,7 @@ Automatically identify and handle missing values.
 
 ![image alt](https://github.com/AtharvThakur7/DataAnalyzer/blob/e4df6b1e59dcd87bb284c5be26e3abe158ec0e36/Screenshot%202024-12-22%20093119.png)
 
-### Data Visualization
+#### Data Visualization
 Generate and Download beautiful and informative plots, such as histograms.
 Plots are created using Matplotlib and Seaborn for high-quality visuals.
 
