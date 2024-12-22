@@ -14,7 +14,7 @@ In today’s data-driven world, making sense of raw data is a crucial skill. Thi
 Clone the Repository
 
 ```bash
-  https://github.com/AtharvThakur7/DataAnalyzer.git
+  git clone https://github.com/AtharvThakur7/DataAnalyzer.git
   cd DataAnalyzer
 ```
 Install Dependencies
