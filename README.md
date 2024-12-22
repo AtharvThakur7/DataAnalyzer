@@ -51,8 +51,12 @@ Automatically identify and handle missing values.
 Generate and Download beautiful and informative plots, such as histograms.
 Plots are created using Matplotlib and Seaborn for high-quality visuals.
 
-
 ![image alt](https://github.com/AtharvThakur7/DataAnalyzer/blob/b16b57951bd887533d44037a7f2f11a2be55aec2/Screenshot%202024-12-22%20093148.png)
+
+#### Data Storage
+Stores the Users Input csv or excel files in Sqlite3 Database .
+![image alt]()
+
 
 
 ## Brief Explanation With Project Flow Structure
@@ -69,7 +73,7 @@ With just a few clicks, users can:
 The project bridges the gap between raw data and actionable insights, making it an essential tool for data enthusiasts, analysts, and developers who need rapid insights from their datasets.
 
 
-![image alt](https://github.com/AtharvThakur7/DataAnalyzer/blob/b16b57951bd887533d44037a7f2f11a2be55aec2/Screenshot%202024-12-22%20093148.png)
+![image alt](https://github.com/AtharvThakur7/DataAnalyzer/blob/dc7c2b5424163175824bf7381cc85bcd13ce0706/Screenshot%202024-12-22%20102308.png)
 
 
 
