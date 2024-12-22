@@ -231,3 +231,10 @@ django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000
 2024-12-22 22:20:04,331 - INFO - Data Analysis Completed! 
 2024-12-22 22:20:07,009 - INFO - Visualization generation completed. 
 2024-12-22 22:43:29,378 - INFO - rendered the html template 
+2024-12-22 23:39:20,171 - INFO - rendered the html template 
+2024-12-22 23:39:27,107 - INFO - removing the columns more than 50 percent data is missing  
+2024-12-22 23:39:27,110 - INFO - handling the missing data and outlliers  
+2024-12-22 23:39:27,114 - INFO - removed duplicates 
+2024-12-22 23:39:27,115 - INFO - Data cleaning Completed! 
+2024-12-22 23:39:27,143 - INFO - Data Analysis Completed! 
+2024-12-22 23:39:29,980 - INFO - Visualization generation completed. 
