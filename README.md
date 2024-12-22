@@ -4,6 +4,10 @@ Welcome to the Django CSV Processor and Visualizer! This project provides a simp
 
 ![image alt ](https://github.com/AtharvThakur7/DataAnalyzer/blob/662ffadf7dc7f0c4868b288c695b1720fb523c84/Screenshot%202024-12-22%20093037.png)
 
+## Motivation
+
+In today’s data-driven world, making sense of raw data is a crucial skill. This project is designed to simplify the process of uploading, analyzing, and visualizing CSV data through a user-friendly web interface. Whether you're a beginner exploring data or an expert seeking quick insights, this tool empowers you with seamless analysis and visualizations.
+
 
 ## Installation
 
