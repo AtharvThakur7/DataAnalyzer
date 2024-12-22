@@ -168,3 +168,11 @@
 2024-12-22 03:24:49,384 - INFO - Data cleaning Completed! 
 2024-12-22 03:24:49,438 - INFO - Data Analysis Completed! 
 2024-12-22 03:25:39,043 - INFO - Visualization generation completed. 
+2024-12-22 09:30:11,560 - INFO - rendered the html template 
+2024-12-22 09:30:12,207 - WARNING - Not Found: /favicon.ico 
+2024-12-22 09:30:59,523 - INFO - removing the columns more than 50 percent data is missing  
+2024-12-22 09:30:59,536 - INFO - handling the missing data and outlliers  
+2024-12-22 09:30:59,549 - INFO - removed duplicates 
+2024-12-22 09:30:59,564 - INFO - Data cleaning Completed! 
+2024-12-22 09:30:59,647 - INFO - Data Analysis Completed! 
+2024-12-22 09:31:01,749 - INFO - Visualization generation completed. 
