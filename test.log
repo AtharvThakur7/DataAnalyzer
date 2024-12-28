@@ -238,3 +238,5 @@ django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000
 2024-12-22 23:39:27,115 - INFO - Data cleaning Completed! 
 2024-12-22 23:39:27,143 - INFO - Data Analysis Completed! 
 2024-12-22 23:39:29,980 - INFO - Visualization generation completed. 
+2024-12-25 22:18:24,508 - INFO - rendered the html template 
+2024-12-25 22:18:25,134 - WARNING - Not Found: /favicon.ico 
