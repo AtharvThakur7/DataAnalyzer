@@ -249,3 +249,19 @@ django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000
 2024-12-28 16:57:17,704 - INFO - Data Analysis Completed! 
 2024-12-28 16:57:18,426 - WARNING - Failed to generate histogram for race/ethnicity: [Errno 2] No such file or directory: 'C:\\Users\\athar\\DataAnalyzer\\media\\plots\\race/ethnicity_histogram.png' 
 2024-12-28 16:57:23,484 - INFO - Visualization generation completed. 
+2024-12-28 21:23:41,212 - INFO - rendered the html template 
+2024-12-28 21:23:41,996 - WARNING - Not Found: /favicon.ico 
+2024-12-28 21:24:14,457 - INFO - removing the columns more than 50 percent data is missing  
+2024-12-28 21:24:14,498 - INFO - handling the missing data and outlliers  
+2024-12-28 21:24:14,524 - INFO - removed duplicates 
+2024-12-28 21:24:14,542 - INFO - Data cleaning Completed! 
+2024-12-28 21:24:15,095 - INFO - Data Analysis Completed! 
+2024-12-28 21:24:21,601 - INFO - Visualization generation completed. 
+2024-12-28 21:27:41,116 - INFO - rendered the html template 
+2024-12-28 21:27:56,349 - INFO - removing the columns more than 50 percent data is missing  
+2024-12-28 21:27:56,355 - INFO - handling the missing data and outlliers  
+2024-12-28 21:27:56,359 - INFO - removed duplicates 
+2024-12-28 21:27:56,363 - INFO - Data cleaning Completed! 
+2024-12-28 21:27:56,388 - INFO - Data Analysis Completed! 
+2024-12-28 21:27:57,927 - INFO - Visualization generation completed. 
+2024-12-28 21:28:55,832 - INFO - C:\Users\athar\DataAnalyzer\analyzer\models.py changed, reloading. 
