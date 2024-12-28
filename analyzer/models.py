@@ -7,7 +7,8 @@ from django.db import models
 
 class UploadedFile(models.Model):
     
-    file = models.FileField(upload_to="uploads")  
+    file = models.FileField()  
+    # upload_to="uploads"
 
         
     #upload the user csv files to the uploads folder to store them temporarily for processing

@@ -26,8 +26,8 @@ SECRET_KEY = os.getenv('SECRET_KEY', 'your-default-secret-key')  # Use an enviro
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv('DEBUG', 'True') == 'True'  # Use environment variable to manage Debug mode
 
-ALLOWED_HOSTS = ['https://dataanalyzer-1-4jz9.onrender.com', 'localhost','127.0.0.1']
-# ALLOWED_HOSTS = ['*','localhost','127.0.0.1']
+# ALLOWED_HOSTS = ['https://dataanalyzer-1-4jz9.onrender.com', 'localhost','127.0.0.1']
+ALLOWED_HOSTS = ['*','localhost','127.0.0.1']
 
   # Replace 'your-app-name.onrender.com' after deploying to Render
 
