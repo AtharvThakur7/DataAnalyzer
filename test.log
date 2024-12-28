@@ -265,3 +265,11 @@ django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000
 2024-12-28 21:27:56,388 - INFO - Data Analysis Completed! 
 2024-12-28 21:27:57,927 - INFO - Visualization generation completed. 
 2024-12-28 21:28:55,832 - INFO - C:\Users\athar\DataAnalyzer\analyzer\models.py changed, reloading. 
+2024-12-28 21:43:21,037 - INFO - rendered the html template 
+2024-12-28 21:43:27,737 - INFO - removing the columns more than 50 percent data is missing  
+2024-12-28 21:43:27,742 - INFO - handling the missing data and outlliers  
+2024-12-28 21:43:27,749 - INFO - removed duplicates 
+2024-12-28 21:43:27,751 - INFO - Data cleaning Completed! 
+2024-12-28 21:43:27,771 - INFO - Data Analysis Completed! 
+2024-12-28 21:43:29,554 - INFO - Visualization generation completed. 
+2024-12-28 21:44:06,099 - INFO - C:\Users\athar\DataAnalyzer\DataAnalyzer\settings.py changed, reloading. 
