@@ -85,20 +85,6 @@ The project bridges the gap between raw data and actionable insights, making it 
 ![image alt](https://github.com/AtharvThakur7/DataAnalyzer/blob/dc7c2b5424163175824bf7381cc85bcd13ce0706/Screenshot%202024-12-22%20102308.png)
 
 
-
-## Development Challenges
-
-
-During the deployment of my Django application on Render, the deployment process completed successfully, and the application was live. However, I encountered a port binding issue that prevented the application from listening on the correct port. The application functioned correctly in the local development environment but failed to start properly in global deployment.
-
-
-Despite implementing the recommended solutions, the port binding issue persists, and the application remains inaccessible externally. I would greatly appreciate any assistance to resolve this problem, ensuring the application functions end-to-end as intended.
-
-![image alt](https://github.com/AtharvThakur7/DataAnalyzer/blob/50e15a21d0379efe0cf8e54f7eb258c1eb2a17fb/Screenshot%202024-12-22%20224256.png)
-
-
-
-
 ## Tech Stack
 
 **Backend:** Django,Python
