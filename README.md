@@ -8,6 +8,9 @@ Welcome to the Data Analyzer! This project provides a simple yet powerful interf
 
 In today’s data-driven world, making sense of raw data is a crucial skill. This project is designed to simplify the process of uploading, analyzing, and visualizing CSV data through a user-friendly web interface. Whether you're a beginner exploring data or an expert seeking quick insights, this tool empowers you with seamless analysis and visualizations.
 
+## Project Structure
+![image alt]()
+
 
 ## Installation
 
