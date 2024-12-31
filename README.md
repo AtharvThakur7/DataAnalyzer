@@ -2,6 +2,8 @@
 
 Welcome to the Data Analyzer! This project provides a simple yet powerful interface for uploading, analyzing, and visualizing CSV data. Built with Python, Django, Pandas, Matplotlib, and Seaborn, this tool is perfect for exploring datasets interactively on the web.
 
+You can access the project using https://dataanalyze-latest.onrender.com
+
 ![image alt ](https://github.com/AtharvThakur7/DataAnalyzer/blob/662ffadf7dc7f0c4868b288c695b1720fb523c84/Screenshot%202024-12-22%20093037.png)
 
 ## Motivation
@@ -9,7 +11,9 @@ Welcome to the Data Analyzer! This project provides a simple yet powerful interf
 In today’s data-driven world, making sense of raw data is a crucial skill. This project is designed to simplify the process of uploading, analyzing, and visualizing CSV data through a user-friendly web interface. Whether you're a beginner exploring data or an expert seeking quick insights, this tool empowers you with seamless analysis and visualizations.
 
 ## Project Structure
-![image alt]()
+![image alt](https://github.com/AtharvThakur7/DataAnalyzer/blob/d60f83c4e824e506c792b86ebdb2428f68bfc28d/Screenshot%202024-12-31%20154526.png) 
+
+This Django-based application integrates data analysis and visualization libraries for processing and interactive visual representation. The project is Dockerized for consistency and deployed on Render for scalable cloud access.
 
 
 ## Installation
