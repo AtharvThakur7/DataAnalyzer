@@ -16,7 +16,7 @@ In today’s data-driven world, making sense of raw data is a crucial skill. Thi
 This Django-based application integrates data analysis and visualization libraries for processing and interactive visual representation. The project is Dockerized for consistency and deployed on Render for scalable cloud access.
 
 
-## Installation
+## Installation on Local Machine
 
 Clone the Repository
 
