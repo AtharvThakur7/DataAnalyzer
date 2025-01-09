@@ -1,6 +1,6 @@
 # Quick Insights: CSV Processing and Visualization
 
-Welcome to the Data Analyzer! This project provides a simple yet powerful interface for uploading, analyzing, and visualizing CSV data. Built with Python, Django, Pandas, Matplotlib, and Seaborn, this tool is perfect for exploring datasets interactively on the web.
+Welcome to the Quick Insights! This project provides a simple yet powerful interface for uploading, analyzing, and visualizing CSV data. Built with Python, Django, Pandas, Matplotlib, and Seaborn, this tool is perfect for exploring datasets interactively on the web.
 
 You can access the project using https://dataanalyze-latest.onrender.com
 
