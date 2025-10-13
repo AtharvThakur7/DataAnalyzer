@@ -24,4 +24,6 @@ RUN python manage.py collectstatic --noinput
 EXPOSE 8000
 
 # Run the application
-CMD ["gunicorn", "DataAnalyzer.wsgi:application", "--bind", "0.0.0.0:8000"]
+# CMD ["gunicorn", "DataAnalyzer.wsgi:application", "--bind", "0.0.0.0:8000"]
+
+CMD ["gunicorn", "DataAnalyzer.wsgi:application", "--bind", "0.0.0.0:8000", "--workers", "2", "--threads", "2", "--worker-class", "gthread", "--timeout", "180", "--keep-alive", "120"]
