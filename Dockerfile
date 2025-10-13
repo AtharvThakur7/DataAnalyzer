@@ -26,4 +26,6 @@ EXPOSE 8000
 # Run the application
 # CMD ["gunicorn", "DataAnalyzer.wsgi:application", "--bind", "0.0.0.0:8000"]
 
-CMD ["gunicorn", "DataAnalyzer.wsgi:application", "--bind", "0.0.0.0:8000", "--workers", "2", "--threads", "2", "--worker-class", "gthread", "--timeout", "180", "--keep-alive", "120"]
+# CMD ["gunicorn", "DataAnalyzer.wsgi:application", "--bind", "0.0.0.0:8000", "--workers", "2", "--threads", "2", "--worker-class", "gthread", "--timeout", "180", "--keep-alive", "120"]
+
+CMD ["bash", "-lc", "gunicorn DataAnalyzer.wsgi:application --bind 0.0.0.0:${PORT} --workers 2 --threads 2 --worker-class gthread --timeout 180 --keep-alive 120"]
