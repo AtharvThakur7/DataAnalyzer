@@ -1,123 +1,247 @@
-# Quick Insights: CSV Processing and Visualization
+<p align="center">
+  <h1 align="center">Quick Insights</h1>
+  <p align="center">AI-Powered Data Analytics Platform</p>
+  <p align="center">
+    <a href="https://dataanalyzer-1-4jz9.onrender.com/">Live Demo</a> &middot;
+    <a href="#features">Features</a> &middot;
+    <a href="#tech-stack">Tech Stack</a> &middot;
+    <a href="#architecture">Architecture</a> &middot;
+    <a href="#getting-started">Getting Started</a>
+  </p>
+</p>
 
-Welcome to the Quick Insights! This project provides a simple yet powerful interface for uploading, analyzing, and visualizing CSV data. Built with Python, Django, Pandas, Matplotlib, and Seaborn, this tool is perfect for exploring datasets interactively on the web.
+---
 
-You can access the project using https://dataanalyze-latest.onrender.com/
+**Quick Insights** turns raw CSV and Excel files into actionable intelligence. Upload a dataset, ask questions in plain English, and get accurate answers powered by an AI Data Agent that writes and executes real pandas code against your actual data — no hallucinated numbers, no guesswork.
 
-![image alt ](https://github.com/AtharvThakur7/DataAnalyzer/blob/662ffadf7dc7f0c4868b288c695b1720fb523c84/Screenshot%202024-12-22%20093037.png)
+> **Try it now:** [https://dataanalyzer-1-4jz9.onrender.com/](https://dataanalyzer-1-4jz9.onrender.com/)
 
-## Motivation
-
-In today’s data-driven world, making sense of raw data is a crucial skill. This project is designed to simplify the process of uploading, analyzing, and visualizing CSV data through a user-friendly web interface. Whether you're a beginner exploring data or an expert seeking quick insights, this tool empowers you with seamless analysis and visualizations.
-
-## Project Structure
-![image alt](https://github.com/AtharvThakur7/DataAnalyzer/blob/d60f83c4e824e506c792b86ebdb2428f68bfc28d/Screenshot%202024-12-31%20154526.png) 
-
-This Django-based application integrates data analysis and visualization libraries for processing and interactive visual representation. The project is Dockerized for consistency and deployed on Render for scalable cloud access.
-
-
-## Installation on Local Machine
-
-Clone the Repository
-
-```bash
-  git clone https://github.com/AtharvThakur7/DataAnalyzer.git
-  cd DataAnalyzer
-```
-Install Dependencies
-
-```bash
-  pip install django pandas matplotlib seaborn
-```
-Run the Server
-```bash
-  python manage.py runserver
-```
-Access the Application
-```bash
-  http://127.0.0.1:8000/
-```
+---
 
 ## Features
 
-#### File Upload
-Upload CSV files directly via a web form.
-Files are temporarily stored for analysis.
+### AI Data Agent
+Ask any question about your data in natural language. The AI agent generates pandas code, executes it in a secure sandbox against your full dataset, and returns precise, computed answers — not approximations from sample rows.
 
-#### Data Analysis
-View the first few rows of your dataset.
-Generate key summary statistics, including:
-Mean
-Median
-Standard Deviation
-Automatically identify and handle missing values.
+- Real-time code generation and execution
+- Self-healing: if generated code fails, the agent auto-corrects and retries
+- Inline interactive charts rendered with ECharts when visual answers help
 
-![image alt](https://github.com/AtharvThakur7/DataAnalyzer/blob/e4df6b1e59dcd87bb284c5be26e3abe158ec0e36/Screenshot%202024-12-22%20093119.png)
+### AI-Generated Reports
+One-click comprehensive reports with:
+- Statistical summaries (distributions, correlations, outliers)
+- Key insights and patterns discovered in your data
+- Interactive visualizations embedded throughout
+- Download as formatted content
 
-#### Data Visualization
-Generate and Download beautiful and informative plots, such as histograms.
-Plots are created using Matplotlib and Seaborn for high-quality visuals.
+### Smart Chart Suggestions
+The AI analyzes your columns and data types to recommend the most effective visualizations — bar charts, scatter plots, line graphs, heatmaps — rendered as interactive ECharts.
 
-![image alt](https://github.com/AtharvThakur7/DataAnalyzer/blob/b16b57951bd887533d44037a7f2f11a2be55aec2/Screenshot%202024-12-22%20093148.png)
+### Dataset Management
+- Upload CSV and Excel files (`.csv`, `.xlsx`, `.xls`)
+- Automatic column type detection and metadata extraction
+- View statistics, preview data, and manage multiple datasets
+- Per-user dataset isolation with JWT authentication
 
-#### Data Storage
-Stores the Users Input csv or excel files in Sqlite3 Database .
+### Interactive Dashboards
+Create and save custom dashboards with multiple chart panels arranged to tell your data's story.
 
-
-![image alt](https://github.com/AtharvThakur7/DataAnalyzer/blob/6deea771b377ebe4732d8ca0153c44b062025107/Screenshot%202024-12-22%20102400.png)
-
-
-
-## Brief Explanation With Project Flow Structure
-
-The Data Analyzer is a web-based application designed to streamline the analysis and visualization of data stored in CSV and Excel files. Built using Django as the backend framework, the application offers a seamless user experience for uploading data files, performing quick exploratory data analysis (EDA), and generating insightful visualizations.
-
-With just a few clicks, users can:
-
-- Upload CSV or Excel files via a user-friendly interface.
-- View essential statistical summaries, such as mean, median, and standard deviation.
-- Identify missing values in the dataset.
-- Generate high-quality visualizations like histograms, powered by Matplotlib and Seaborn.
-
-The project bridges the gap between raw data and actionable insights, making it an essential tool for data enthusiasts, analysts, and developers who need rapid insights from their datasets.
-
-
-![image alt](https://github.com/AtharvThakur7/DataAnalyzer/blob/dc7c2b5424163175824bf7381cc85bcd13ce0706/Screenshot%202024-12-22%20102308.png)
-
+---
 
 ## Tech Stack
 
-**Backend:** Django,Python
+| Layer | Technology |
+|-------|-----------|
+| **Backend** | Django 5, Django REST Framework |
+| **AI Engine** | OpenAI GPT-4o-mini, Pandas code execution |
+| **Frontend** | Alpine.js, Tailwind CSS, ECharts |
+| **Auth** | JWT (SimpleJWT) — register, login, token refresh |
+| **Database** | SQLite (dev) / PostgreSQL (production-ready) |
+| **Caching** | Django Redis (optional) |
+| **Deployment** | Docker, Gunicorn, WhiteNoise, Render |
+| **Data Processing** | Pandas, NumPy, OpenPyXL |
 
-**Data Analysis:** Pandas
+---
 
-**Data Visualization:** Matplotlib, Seaborn
+## Architecture
 
-**Database:** SQLite3
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                        CLIENT (Browser)                         │
+│          Alpine.js SPA  ·  Tailwind CSS  ·  ECharts             │
+└──────────────────────────────┬──────────────────────────────────┘
+                               │  REST API (JSON)
+                               ▼
+┌─────────────────────────────────────────────────────────────────┐
+│                     DJANGO REST FRAMEWORK                       │
+│                                                                 │
+│  ┌──────────┐  ┌───────────┐  ┌────────────┐  ┌─────────────┐  │
+│  │ Accounts │  │ Datasets  │  │ AI Insights│  │ Dashboards  │  │
+│  │          │  │           │  │            │  │             │  │
+│  │ Register │  │ Upload    │  │ Ask (NL)   │  │ Create      │  │
+│  │ Login    │  │ Preview   │  │ Insights   │  │ Save        │  │
+│  │ JWT Auth │  │ Stats     │  │ Reports    │  │ Charts      │  │
+│  │ Profile  │  │ Charts    │  │ Suggest    │  │ Layout      │  │
+│  └──────────┘  └───────────┘  └─────┬──────┘  └─────────────┘  │
+│                                     │                           │
+└─────────────────────────────────────┼───────────────────────────┘
+                                      │
+                    ┌─────────────────┼─────────────────┐
+                    ▼                 ▼                  ▼
+           ┌──────────────┐  ┌──────────────┐  ┌──────────────┐
+           │  OpenAI API  │  │  Pandas      │  │  Sandboxed   │
+           │  GPT-4o-mini │  │  DataFrame   │  │  exec()      │
+           │              │  │  (Full Data) │  │  Environment │
+           │  Code Gen +  │  │              │  │              │
+           │  Interpret   │  │  Real Stats  │  │  Safe Exec   │
+           └──────────────┘  └──────────────┘  └──────────────┘
+```
 
-**Frontend:** Django Templates (HTML, CSS)
+### Data Flow: AI Question Answering
 
+```
+User Question (natural language)
+        │
+        ▼
+┌─────────────────────┐
+│  1. CODE GENERATION  │  AI receives: question + column schema + dataset stats
+│     (GPT-4o-mini)    │  AI produces: pandas code with `result` variable
+└──────────┬──────────┘
+           ▼
+┌─────────────────────┐
+│  2. SANDBOX EXECUTE  │  Forbidden tokens blocked (exec, eval, os, sys, etc.)
+│     (Restricted env) │  Code runs against full DataFrame copy
+└──────────┬──────────┘  On error → AI gets traceback → auto-fixes → retry
+           ▼
+┌─────────────────────┐
+│  3. INTERPRET        │  AI receives: original question + computed results
+│     (GPT-4o-mini)    │  AI produces: human-readable answer + optional chart
+└──────────┬──────────┘
+           ▼
+   Accurate, computed answer
+   delivered to the user
+```
 
+### API Endpoints
 
-## Future Enhancements
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| `POST` | `/api/auth/register/` | Create account |
+| `POST` | `/api/auth/login/` | Get JWT tokens |
+| `POST` | `/api/auth/refresh/` | Refresh access token |
+| `GET` | `/api/auth/profile/` | User profile |
+| `GET/POST` | `/api/datasets/` | List / upload datasets |
+| `GET/DELETE` | `/api/datasets/{id}/` | Dataset detail |
+| `GET` | `/api/datasets/{id}/preview/` | Data preview |
+| `GET` | `/api/datasets/{id}/stats/` | Column statistics |
+| `POST` | `/api/datasets/{id}/batch_charts/` | Generate charts |
+| `POST` | `/api/ai/ask/` | Ask a question (AI Agent) |
+| `POST` | `/api/ai/insights/` | Generate insights |
+| `POST` | `/api/ai/suggest-charts/` | AI chart suggestions |
+| `POST` | `/api/ai/report/` | Full AI report |
 
-While the current version of the Data Analyzer provides essential tools for data analysis and visualization, future versions aim to elevate the experience by:
+---
 
-- Enabling end-to-end dynamic analysis and visualization, where users can filter, transform, and customize their data directly on the platform.
+## Getting Started
 
-- Creating a dashboard view to display multiple insights simultaneously for comprehensive analysis.
+### Prerequisites
+- Python 3.11+
+- OpenAI API key
 
+### Local Setup
 
-## Conclusion
+```bash
+# Clone the repository
+git clone https://github.com/AtharvThakur7/DataAnalyzer.git
+cd DataAnalyzer
 
-The Data Analyzer is more than just a tool—it's your first step toward unlocking the full potential of your data. By simplifying the process of analysis and visualization, this project empowers users to extract meaningful insights from raw data efficiently and intuitively.
+# Create virtual environment
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
 
-We believe in continuous improvement and welcome suggestions, feedback, and contributions to make this tool even better.
+# Install dependencies
+pip install -r requirements.txt
 
+# Configure environment
+cp .env.example .env
+# Edit .env and add your OPENAI_API_KEY
 
+# Run migrations
+python manage.py migrate
 
+# Start the server
+python manage.py runserver
+```
 
+Open [http://127.0.0.1:8000/](http://127.0.0.1:8000/) in your browser.
 
+### Docker
 
+```bash
+docker build -t quick-insights .
+docker run -p 8000:8000 --env-file .env quick-insights
+```
 
+### Environment Variables
 
+| Variable | Required | Description |
+|----------|----------|-------------|
+| `SECRET_KEY` | Yes | Django secret key |
+| `OPENAI_API_KEY` | Yes | OpenAI API key |
+| `DEBUG` | No | `True` for development (default: `True`) |
+| `ALLOWED_HOSTS` | No | Comma-separated hostnames |
+| `DATABASE_URL` | No | PostgreSQL URL (defaults to SQLite) |
+| `REDIS_URL` | No | Redis cache URL |
+
+---
+
+## Project Structure
+
+```
+DataAnalyzer/
+├── apps/
+│   ├── accounts/       # User registration, JWT auth, profiles
+│   ├── datasets/       # File upload, parsing, statistics, charts
+│   ├── ai_insights/    # AI agent, insights, reports, chart suggestions
+│   ├── dashboards/     # Custom dashboard creation and management
+│   └── core/           # Health check, shared utilities
+├── templates/
+│   ├── landing.html    # Public landing page
+│   └── app.html        # Main SPA (Alpine.js)
+├── DataAnalyzer/       # Django project settings, URLs, WSGI
+├── Dockerfile          # Production Docker image
+├── Procfile            # Render deployment commands
+└── requirements.txt    # Python dependencies
+```
+
+---
+
+## Security
+
+- All AI code execution runs in a **sandboxed environment** with restricted builtins
+- Forbidden operations: `exec()`, `eval()`, `__import__`, `open()`, `os`, `sys`, `subprocess`
+- DataFrames are copied before execution — originals are never modified
+- JWT-based authentication with token refresh
+- Per-user dataset isolation
+- CORS and CSRF protection in production
+
+---
+
+## Roadmap
+
+- [ ] Database connectors (PostgreSQL, MySQL, MongoDB)
+- [ ] Data warehouse integration (BigQuery, Snowflake)
+- [ ] Scheduled automated reports
+- [ ] Team collaboration and shared dashboards
+- [ ] Persistent cloud storage for uploads
+- [ ] Export dashboards as PDF
+
+---
+
+## Contributing
+
+Contributions are welcome! Feel free to open issues or submit pull requests.
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
