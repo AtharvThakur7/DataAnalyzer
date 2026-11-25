@@ -33,8 +33,18 @@ def home(request):   # the home route to main application
                             # Read and process this file with pandas
                             if file_extension == 'csv':
                                 data = pd.read_csv(file_path)
+
+                            elif file_extension in ['xlsx', 'xlsm', 'xltx', 'xltm']:
+
+                                data = pd.read_excel(file, engine='openpyxl')  
+
+                            elif file_extension == 'xls':
+                                data = pd.read_excel(file, engine='xlrd') # requires xlrd==1.2.0      
                             else:
-                                data = pd.read_excel(file_path)
+                                return render(request, 'uploads.html', {'error': 'Only CSV and Excel files are allowed.'})
+                            
+
+                            
 
                             # Clean the data
                             
