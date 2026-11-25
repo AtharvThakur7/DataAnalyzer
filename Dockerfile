@@ -1,27 +1,39 @@
-# filepath: /C:/Users/athar/DataAnalyzer/Dockerfile
-# Use the official Python image from the Docker Hub
-# FROM python:3.9-slim
-FROM python:3.11.4-slim
+FROM python:3.12-slim
 
-# Set environment variables
-ENV PYTHONDONTWRITEBYTECODE 1
-ENV PYTHONUNBUFFERED 1
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1 \
+    PIP_NO_CACHE_DIR=1 \
+    PIP_DISABLE_PIP_VERSION_CHECK=1 \
+    PORT=8000
 
-# Set the working directory
 WORKDIR /app
 
-# Install dependencies
-COPY requirements.txt /app/
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends libpq-dev gcc && \
+    rm -rf /var/lib/apt/lists/*
+
+COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy the project files
-COPY . /app/
+COPY . .
 
-# Collect static files
-RUN python manage.py collectstatic --noinput
+RUN python manage.py collectstatic --noinput 2>/dev/null || true
 
-# Expose the port the app runs on
+RUN mkdir -p /app/media/uploads
+
 EXPOSE 8000
 
-# Run the application
-CMD ["gunicorn", "DataAnalyzer.wsgi:application", "--bind", "0.0.0.0:8000"]
+HEALTHCHECK --interval=30s --timeout=5s --start-period=15s --retries=3 \
+    CMD python -c "import urllib.request; urllib.request.urlopen('http://localhost:${PORT}/health/')" || exit 1
+
+CMD gunicorn DataAnalyzer.wsgi:application \
+    --bind 0.0.0.0:${PORT} \
+    --workers 2 \
+    --threads 4 \
+    --worker-class gthread \
+    --worker-tmp-dir /dev/shm \
+    --max-requests 1000 \
+    --max-requests-jitter 50 \
+    --timeout 120 \
+    --access-logfile - \
+    --error-logfile -
